@@ -6,15 +6,25 @@
         <nav>
             <ul>
                 <li>
-                    <a href="{{asset('/')}}"> Home </a>
+                    <a
+                        class="{{ Request::route()->getName() == 'homepage' ? 'active' : '' }}"
+                        href="{{ url('/') }}">
+                        Home
+                    </a>
                 </li>
-
                 <li>
-                    <a href="{{asset('/prodotti')}}"> Prodotti </a>
+                    <a
+                        class="{{ Request::route()->getName() == 'pagina-prodotti' ? 'active' : '' }}"
+                        href="{{ route('pagina-prodotti') }}">
+                        Prodotti
+                    </a>
                 </li>
-                
                 <li>
-                    <a href="{{asset('/news')}}"> News </a>
+                    <a
+                        class="{{ Request::route()->getName() == 'pagina-news' ? 'active' : '' }}"
+                        href="{{ route('pagina-news') }}">
+                        News
+                    </a>
                 </li>
             </ul>
         </nav>

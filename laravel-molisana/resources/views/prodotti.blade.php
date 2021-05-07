@@ -1,17 +1,19 @@
 @extends('layouts.app')
 
+@section('page-title', 'Tutti i prodotti - La Molisana')
+
 @section('content')
     <div class="prodotti">
         <div class="container">
-            @foreach ($paste as $tipo => $pasta)
+            @foreach ($formati as $tipo => $pasta)
                 <h1 class="titolo-tipo">{{ $tipo }}</h1>
                 <div class="card-container">
                     @foreach ($pasta as $indice => $formato)
                         <div class="card">
-                            <img src="{{ $paste['src'] }}" alt="{{ $paste['titolo'] }}">
+                            <img src="{{ $formato['src'] }}" alt="{{ $formato['titolo'] }}">
                             <div class="overlay">
                                 <a href="{{ route('pagina-dettaglio', ['id' => $indice]) }}">
-                                    {{ $paste['titolo'] }}
+                                    {{ $formato['titolo'] }}
                                 </a>
                             </div>
                         </div>
@@ -22,5 +24,3 @@
     </div>
 @endsection
 
-
-@section('page-title', 'Tutti i prodotti - La Molisana')

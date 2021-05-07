@@ -1,12 +1,13 @@
 @extends('layouts.app')
 
-@section('content')
+@section('page-title', 'News - La Molisana')
+
+@section('news')
     <div class="container">
-        <h1>NEWS</h1>
-        @foreach ($ as $)
+        <h1 class="text">NEWS E APPROFONDIMENTI DAL MONDO LA MOLISANA</h1>
+        {{-- <img src="{{asset('images/news.jpg')}}" alt=""> --}}
+        {{-- @foreach ($ as $)
             <p>{{ $ }}</p>
-        @endforeach
+        @endforeach --}}
     </div>
 @endsection
-
-@section('page-title', 'Latest news - La Molisana')

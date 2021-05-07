@@ -12,8 +12,10 @@
         
         <main>
             @yield('content')
+            
+            @yield('news')
         </main>
     
-        @include('partials.footer')
+    @include('partials.footer')
 </body>
 </html>
