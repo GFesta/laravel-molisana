@@ -1,5 +1,5 @@
 <footer>
-    <div class="container">
+    <div class="container mt-25">
             <div class="footer-left">
                 <img src="https://upload.wikimedia.org/wikipedia/it/thumb/4/41/Logo_PASTA_LA_MOLISANA.png/1200px-Logo_PASTA_LA_MOLISANA.png">
                 <div>Ragione sociale: La Molisana S.P.A.</div>
@@ -60,5 +60,5 @@
                 </div>
             </div>
         </div>
-    <img src="{{ asset('images/footer-montagne-bottom.jpg') }}" alt="">
+    <img class="mt-50" src="{{ asset('images/footer-montagne-bottom.jpg') }}" alt="">
 </footer>
